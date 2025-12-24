@@ -145,7 +145,7 @@ python examples/01_causal_discovery.py
 ### Academic
 
 - [Elements of Causal Inference](https://mitpress.mit.edu/9780262037310/) — Peters, Janzing, Schölkopf
-- [Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) — Hernán & Robins
+- [Causal Inference: What If](https://www.hsph.harvard.edu/research/causalab/) — Hernán & Robins (CausaLab)
 - [GEARS](https://www.nature.com/articles/s41587-023-01905-6) — Multigene perturbation prediction
 - [CPA](https://www.embopress.org/doi/full/10.15252/msb.202211517) — Compositional Perturbation Autoencoder
 - [CausalBench](https://www.gsk.ai/causalbench-challenge/) — Gene network inference benchmark
