@@ -79,6 +79,23 @@ python examples/01_causal_discovery.py
 
 ## Milestones
 
+### Milestone 0: Foundational Tutorials & Documentation ✅
+
+- [x] **Causal Inference Tutorials**
+  - [x] Treatment effects and potential outcomes framework
+  - [x] Propensity score methods and IPW (inverse probability weighting)
+  - [x] Do-calculus tutorial document (comprehensive guide with examples)
+  - [ ] Do-calculus interactive notebook (hands-on exercises and applications)
+  - [x] Identifying confounders and adjustment strategies
+- [x] **Simulation Framework**
+  - [x] Confounding simulation utilities
+  - [x] Treatment effect estimation examples
+  - [x] Cell cycle, batch effect, and disease severity confounders
+- [x] **Notebooks**
+  - [x] A/B testing fundamentals and multi-group comparisons
+  - [x] Causal graphs and d-separation
+  - [x] Sensitivity analysis methods
+
 ### Milestone A: Causal Discovery on Gene Expression
 
 - [ ] Implement constraint-based methods (PC algorithm)
@@ -90,8 +107,8 @@ python examples/01_causal_discovery.py
 ### Milestone B: Treatment Effect Estimation
 
 - [ ] Integrate DoWhy for causal effect estimation
-- [ ] Implement propensity score methods
-- [ ] Implement doubly robust estimators
+- [x] Implement propensity score methods (IPW, stabilized weights)
+- [ ] Implement doubly robust estimators (AIPW, TMLE)
 - [ ] Apply to drug response prediction
 - [ ] Heterogeneous treatment effects (CATE)
 
