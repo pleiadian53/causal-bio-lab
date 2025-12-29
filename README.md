@@ -96,6 +96,26 @@ python examples/01_causal_discovery.py
   - [x] Causal graphs and d-separation
   - [x] Sensitivity analysis methods
 
+### Milestone 0.5: Structural Causal Models & Counterfactuals 🚧
+
+- [x] **SCM Framework**
+  - [x] Base SCM class with structural equations
+  - [x] Intervention utilities (do-operator implementation)
+  - [x] Counterfactual computation (abduction-action-prediction)
+  - [x] Linear SCM for efficient counterfactuals
+- [x] **Documentation**
+  - [x] Comprehensive SCM tutorial covering three levels of causation
+  - [x] Association vs intervention vs counterfactual reasoning
+  - [x] Connection to potential outcomes and do-calculus
+- [ ] **Examples & Notebooks**
+  - [ ] Interactive SCM notebook with hands-on exercises
+  - [ ] Biological SCM examples (gene regulation, drug response)
+  - [ ] Counterfactual fairness and model explanation examples
+- [ ] **Integration**
+  - [ ] Connect SCMs to existing do-calculus tutorial
+  - [ ] Show SCM implementation of IPW and propensity scores
+  - [ ] Demonstrate mediation analysis with SCMs
+
 ### Milestone A: Causal Discovery on Gene Expression
 
 - [ ] Implement constraint-based methods (PC algorithm)
@@ -175,7 +195,33 @@ python examples/01_causal_discovery.py
 
 ## Related Projects
 
-- [genai-lab](../genai-lab/) — Generative AI for computational biology (VAE, diffusion, counterfactual simulation)
+### [genai-lab](../genai-lab/) — Generative AI for Computational Biology
+
+**Complementary Focus:** While `causal-bio-lab` focuses on **uncovering causal structures** and **estimating causal effects**, `genai-lab` focuses on **modeling data-generating processes** through generative models (VAE, diffusion, transformers).
+
+**Synergy:**
+
+- **Generative AI** learns rich representations of biological data and can simulate realistic perturbation responses
+- **Causal ML** provides the framework to ensure these models capture true causal mechanisms, not just correlations (via causal graphs, structural equations, and causal discovery)
+- **Together:** Causal generative models enable counterfactual reasoning, treatment effect prediction, and mechanistic understanding
+
+**Key Integration Points:**
+
+1. **Causal graphs from discovery algorithms** can constrain generative model architectures and latent space structure
+2. **Causal inference methods** (do-calculus, structural equations, propensity scores) validate counterfactual predictions from generative models
+3. **Causal representation learning** (Milestone D) bridges both projects—learning disentangled latent spaces that respect causal structure
+4. **Perturbation prediction** benefits from both: generative models for realistic simulation + causal effect estimation for unbiased predictions
+
+**Example Workflow:**
+
+```text
+1. Use genai-lab to train a VAE on gene expression data
+2. Use causal-bio-lab to discover causal relationships between genes
+3. Integrate causal structure into the VAE latent space (causal VAE)
+4. Generate counterfactual perturbation responses with causal guarantees
+```
+
+See `genai-lab` Stage 5 (Counterfactual & Causal) for planned integration work.
 
 ## License
 
